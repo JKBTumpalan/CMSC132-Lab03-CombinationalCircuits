@@ -38,3 +38,6 @@ For increment, I used 2-bit FA to add the constant '01', just like the increment
 
 ## References
 - Full adder: https://github.com/jachermocilla/extra-course-materials/tree/cmsc132/cmsc132/vhdl
+
+## Github repo
+https://github.com/JKBTumpalan/CMSC132-Lab03-CombinationalCircuits.git

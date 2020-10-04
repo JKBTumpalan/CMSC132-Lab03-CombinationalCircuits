@@ -51,8 +51,7 @@ ARCHITECTURE struct of alu_2bit is
     SIGNAL fs_borrowOut: STD_LOGIC_VECTOR(0 TO 1) := B"00"; --Borrow wire initialize to 0---
     SIGNAL fs_difference: STD_LOGIC_VECTOR(0 TO 1);
     SIGNAL fs_difference2: STD_LOGIC_VECTOR(0 TO 1);
-    SIGNAL noInput: STD_LOGIC_VECTOR(0 TO 1) := B"01"; --ADD ONE TO 2's COMPLEMENT---
-    SIGNAL incInput: STD_LOGIC_VECTOR(0 TO 1);
+    SIGNAL incInput: STD_LOGIC_VECTOR(0 TO 1) := B"01"; --ADD ONE TO 2's COMPLEMENT---
 
 
     BEGIN
@@ -80,7 +79,7 @@ ARCHITECTURE struct of alu_2bit is
 
         --2's complement component--
         fs_2bit_2s_complement: full_adder_2bit port map(input_i, fs_subtrahend_complement, fs_difference2, fs_borrowOut(1));
-        fs_2bit_2s_complement_plus_1: full_adder_2bit port map(fs_difference, noInput, fs_2s_complement, c_out);
+        fs_2bit_2s_complement_plus_1: full_adder_2bit port map(fs_difference, incInput, fs_2s_complement, c_out);
 
         -------- MULTIPLEXER PORTING ----------
         main_mux: mux_8to1 port map(and_signal, or_signal, xor_signal, not_signal, addition_signal, fs_1s_complement, fs_2s_complement, inc_signal, operation, output_k);
