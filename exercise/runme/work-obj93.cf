@@ -1,0 +1,28 @@
+v 4
+file . "alu_2bit_tb.vhd" "a860d0edc18a3c863ee639c622b2f1d065fb0fd7" "20201004040922.290":
+  entity alu_2bit_tb at 1( 0) + 0 on 27;
+  architecture hardcoded of alu_2bit_tb at 5( 82) + 0 on 28;
+file . "mux_8to1.vhdl" "5707855c3ac775b494d7e278f13f913d766e5c34" "20201004040922.277":
+  entity mux_8to1 at 1( 0) + 0 on 23;
+  architecture bhv of mux_8to1 at 12( 267) + 0 on 24;
+file . "fa.vhdl" "0e88a38f36a109a9fd5280f2ee58f4b4c8bc2e46" "20201004040922.263":
+  entity full_adder at 1( 0) + 0 on 19;
+  architecture behavioral of full_adder at 12( 226) + 0 on 20;
+file . "xor_gate.vhdl" "f09005e61b1533c4b763408b901a77052593cb89" "20201004040922.244":
+  entity xor_gate at 1( 0) + 0 on 15;
+  architecture behavioral of xor_gate at 10( 225) + 0 on 16;
+file . "and_gate.vhdl" "8dae06f2b4882691c4f2ce522fc2414a5380dd94" "20201004040922.233":
+  entity and_gate at 1( 0) + 0 on 11;
+  architecture behavioral of and_gate at 10( 225) + 0 on 12;
+file . "or_gate.vhdl" "21a97a9f6f8a851ff6c503addcdadd78d122668b" "20201004040922.238":
+  entity or_gate at 1( 0) + 0 on 13;
+  architecture behavioral of or_gate at 10( 223) + 0 on 14;
+file . "not_gate.vhdl" "3d11cc84d52a5d726729f7620362fb1095b15656" "20201004040922.256":
+  entity not_gate at 1( 0) + 0 on 17;
+  architecture behavioral of not_gate at 10( 222) + 0 on 18;
+file . "fa_2bit.vhdl" "9c75495b0707988848bc0eb007874915f6731f23" "20201004040922.271":
+  entity full_adder_2bit at 1( 0) + 0 on 21;
+  architecture struct of full_adder_2bit at 11( 297) + 0 on 22;
+file . "alu_2bit.vhdl" "cf952c1e63d97cce0f949a807eec9898f4223f35" "20201004040922.283":
+  entity alu_2bit at 1( 0) + 0 on 25;
+  architecture struct of alu_2bit at 12( 316) + 0 on 26;
